@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Huisartsenpraktijken/inlog</title>
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.button.min.css" rel="stylesheet" type="text/css">
+<link href="css/HAAPP_inlog.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.button.min.js"></script>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="HAAPP_algemeen.html#"><img src="images/image_processing20200511-26717-1dm9puk.png" alt="" width="40px" height="40px" class="esculaap"/>
+	<h3>Huisartsenpraktijken</h3></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+	  <div class="collapse navbar-collapse menumenu" id="navbarSupportedContent1">
+	    <ul  class="navbar-nav mr-auto">
+			    <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="HAAPP_algemeen.html" id="navbarDropdown1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Home</a>
+	        <div class="dropdown-menu" aria-labelledby="navbarDropdown1"> 
+				
+			 <a class="dropdown-item" href="HAAPP_chat.html#">Chat met de arts</a> 
+			 <a class="dropdown-item" href="HAAPP_consultaanvraag.html#">Consultaanvraag</a>
+	         <a class="dropdown-item" href="HAAPP_doorverwijzing.html#">Doorverwijzing</a>
+			 <a class="dropdown-item" href="HAAPP_lab.html">Bloedonderzoek</a>
+			 <a class="dropdown-item" href="HAAPP_berichten.html#">Berichten</a>
+	         <a class="dropdown-item" href="HAAPP_EPD.html#">EPD</a>
+	         <a class="dropdown-item" href="HAAPP_mijnmedicijnen.html#">Mijn medicijnen</a>
+			 <a class="dropdown-item" href="HAAPP_spoed.html#">Spoed!!!</a> </div>
+          </li>
+	      <li class="nav-item"> <a class="nav-link" href="#">Profiel</a> </li>
+		  <li class="nav-item"> <a class="nav-link" href="#">Help</a> </li>
+        </ul></div>
+	    <form id="search" class="form-inline my-2 my-lg-0 search">
+	      <input id="searchbutton" class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+	      <button  class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      
+  </nav>
+</header>
+	<section>
+		<br>
+<h3>Inlogscherm</h3>
+	<br>
+		
+	<img id="sthetoscoop" src="images/pngwing.com kopie.png" width="50%" height="50%" alt=""/>
+		
+		
+<form id="form1">
+
+	<h6>Log hier in:</h6>
+		<p><label for="anaam"> Naam:&emsp;&emsp;&emsp;</label>
+	  <input name="anaam" id="name1" pattern="[a-z].[A-Z]" type="name" placeholder="naam"></p>
+
+	<p>Wachtwoord:
+		<input id="WW" type="password" pattern="[a-z]+.[A-B]+.[0-9]+{8}"></p>
+	
+	<input class= "inloggen" type="submit" value="Inloggen"><br><br><input class= "inloggen" type="submit" value="Wachtwoord vergeten?">
+	
+	</form>
+<br><br>
+	
+	
+	<form id="form2">
+
+	<h6>Heeft u nog geen account? Vul dan uw gegevens hieronder in om u te registreren:</h6>
+	<p><label for="anaam"> Naam:&emsp;&emsp;&emsp;</label>
+	  <input name="anaam" type="name" pattern="[a-zA-Z]" placeholder="naam"></p>
+		<p>Email:&nbsp;&nbsp;&emsp;&emsp;&emsp;<input id="mail1" type="email" pattern="^[a-zA-Z0-9._%+-]+\.[a-zA-Z]{2,4}$" input placeholder="naam@domein.nl"></p>
+
+	<p>Wachtwoord:
+		<input id="pass1"  type="password" pattern="[a-z]+.[A-B]+.[0-9]+{8}"></p>
+	
+	<input class= "inloggen" type="submit" value="Registreren">
+	
+	</form>
+	<br>
+	<br>
+		<br>
+	
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap-4.4.1.js"></script>
+<script type="text/javascript">
+$(function() {
+	$( "#Button1" ).button(); 
+});
+</script>
+		
+</section>
+
+
+<footer>
+	
+  
+<a class="dropdown-item" href="HAAPP_spoed.html#">	
+ <button id="spoed" type="button" class="btn btn-lg">SPOED!!!</button></a>
+
+	
+</footer>
+
+</body>
+</html>
